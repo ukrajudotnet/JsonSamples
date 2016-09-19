@@ -1,0 +1,33 @@
+﻿@model JsonTask.Models.PeopleViewModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Cat Owners</title>
+</head>
+<body>
+    <div>
+        <h2>Male</h2>
+        <ul>
+            @foreach (var item in Model.Male)
+            {
+                <li>
+                    @item.Name
+                </li>;
+            }
+        </ul>
+        <h2>Female</h2>
+        <ul>
+            @foreach (var item in Model.Female)
+            {
+                <li>
+                    @item.Name
+                </li>;
+            }
+        </ul>
+    </div>
+</body>
+</html>
